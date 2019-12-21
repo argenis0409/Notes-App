@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Notes from './Notes';
-import Editor from './Editor'
+import Editor from './Editor';
+import Search from './Search';
 
 class App extends Component {
   render() {
