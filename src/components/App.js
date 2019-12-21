@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import Notes from './Notes';
+import Editor from './Editor'
 
 class App extends Component {
   render() {
