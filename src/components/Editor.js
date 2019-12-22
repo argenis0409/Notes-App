@@ -7,13 +7,16 @@ export default class Editor extends Component {
           text: '',
           color: '#FFA726'
         }
+
+        this.handleTextChange = this.handleTextChange.bind(this);
+        this.handleNoteAdd = this.handleNoteAdd.bind(this);
       }
       
-      handleTextChange = (event) => {
+      handleTextChange(event) {
         this.setState({ text: event.target.value });
       };
     
-      handleNoteAdd = () => {
+      handleNoteAdd() {
         var newNote = {
           text: this.state.text,
           color: this.state.color,
